@@ -31,3 +31,58 @@ the standard CKJ character 《 that exists in Unicode and may be used in GML if 
 
 The displayed symbol is simply a visual cue to indicate the designated PUA code point.
 
+## Tag Structure in GML
+
+GML tags serve as the fundamental building blocks for representing elements in the Glossa Markup Language. Each tag is designed to encapsulate both the identity of an element (its name) and any related metadata (its attributes). 
+
+### Tag Components
+
+Every GML tag is composed of two main parts:
+
+- **Tag Name:**  
+  This is the identifier for the tag, much like an HTML or XML tag name. It tells you what type of element or construct is being represented (for example, `paragraph`, `link`, or `section`).
+
+- **Attributes (Optional):**  
+  Attributes are provided as a set of key/value pairs and supply additional information about the element. They follow the tag name within the tag. Each attribute is written in the form:
+  
+  ```
+  key〓value
+  ```
+  
+  Multiple attributes are separated by the field separator (〡).
+
+### Constructing a tag
+
+#### Opening tag with qttributes
+
+An opening tag begins with the start marker, immediately followed by the tag name. If attributes are present, they follow the tag name, each separated by the field separator. Finally, the tag is closed with the end marker. For example:
+
+```
+《tagname 〡key1〓value1 〡key2〓value2》
+```
+
+In this example:
+- `tagname` identifies the element.
+- `key1` is assigned the value `value1`.
+- `key2` is assigned the value `value2`.
+
+#### Opening tag without attributes
+
+If no attributes are needed, the tag can simply include the tag name between the start and end markers:
+
+```
+《tagname 》
+```
+
+This format indicates that the element is present without any additional metadata.
+
+### Closing tags
+
+To explicitly denote the end of an element, a closing tag is used. The closing tag mimics the opening tag’s structure but includes a forward slash (`/`) immediately after the start marker to indicate that it is a closing tag:
+
+```
+《/tagname 》
+```
+
+This is analogous to closing tags in HTML or XML and helps define boundaries for nested or complex structures.
+
