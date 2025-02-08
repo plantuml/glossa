@@ -86,3 +86,51 @@ To explicitly denote the end of an element, a closing tag is used. The closing t
 
 This is analogous to closing tags in HTML or XML and helps define boundaries for nested or complex structures.
 
+# Text tag
+
+The `text` tag is designed to encapsulate long text content along with multiple style modifiers. Here’s an explanation of the core principles behind the tag and its various style options.
+
+
+## Core concepts
+
+The tag allows you to define a block of text and then enhance its presentation using additional style modifiers. The key idea is to combine content with one or more modifiers to achieve the desired visual formatting. The general structure is as follows:
+
+```
+《text 〡content〓<text_content> [〡modifier1 [〓modifier1_value]] [〡modifier2 ...]》
+```
+
+- **Content:**  
+  The main body of text is declared right after the `〡content〓` marker. This section can be very long and represents the text you want to display.
+
+- **Modifiers:**  
+  Following the content, you can append various modifiers to change the appearance of the text. Each modifier targets a specific visual effect.
+
+---
+
+## Available style modifiers
+
+| **Modifier**   | **Purpose**                                                              |
+| -------------- | ------------------------------------------------------------------------ |
+| ``color``      | Color used for the text                                                  |
+| ``bold``       | Makes the text appear in bold                                            |
+| ``italic``     | Renders the text in an italicized style                                  |
+| ``underline``  | Underlines the text, an optional color can be specified                  |
+| ``wave``       | Applies a wavy underline to the text, an optional color can be specified |
+| ``background`` | Sets a background color behind the text                                  |
+| ``strike``     | Draws a line through the text, an optional color can be specified        |
+
+---
+
+## Example usage
+
+A practical example of the `text` tag might look like this:
+
+```
+《text 〡content〓This is the content of the text. It can be very long 〡underline〓#012345〡bold》
+```
+
+In this example:
+- **Content:** The primary text is "This is the content of the text. It can be very long".
+- **Underline:** The text is underlined with a specific color (`#012345`).
+- **Bold:** bold modifier is applied to enhance the emphasis and style of the text.
+
