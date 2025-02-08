@@ -1,6 +1,8 @@
-# Wiki Syntax Converter
+# Wiki syntax converter
 
-Wiki Syntax Converter is an incubation library designed to parse and convert various wiki syntaxes, including Markdown, AsciiDoc, Creole, and more, through a centralized pivot format, Glossa Markup Language (GML). This project is being developed with future integration into PlantUML in mind.
+`Glossa` is an incubation library designed to parse and convert various wiki syntaxes, including Markdown, AsciiDoc, Creole, and more, through a centralized pivot format, Glossa Markup Language (GML).
+
+This project is being developed with future integration into PlantUML in mind.
 
 ## Overview
 
