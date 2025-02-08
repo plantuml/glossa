@@ -40,7 +40,7 @@ GML tags serve as the fundamental building blocks for representing elements in t
 Every GML tag is composed of two main parts:
 
 - **Tag Name:**  
-  This is the identifier for the tag, much like an HTML or XML tag name. It tells you what type of element or construct is being represented (for example, `paragraph`, `link`, or `section`).
+  This is the identifier for the tag, much like an HTML or XML tag name. It tells you what type of element or construct is being represented (for example, `text`, `link`, or `table`).
 
 - **Attributes (Optional):**  
   Attributes are provided as a set of key/value pairs and supply additional information about the element. They follow the tag name within the tag. Each attribute is written in the form:
