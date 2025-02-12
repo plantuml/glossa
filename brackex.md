@@ -128,10 +128,10 @@ Predefined classes let you reference frequently used sets of characters using th
 ### 5.2. Literal Classes
 
 - **`〴'`**  
-  *Description:* Represents the apostrophe character.
+  *Description:* Represents any single quote character in Unicode. This includes the ASCII apostrophe (`'`) as well as typographic variants such as `‘`, `’`, and others.
 
 - **`〴"`**  
-  *Description:* Represents the double-quote character.
+  *Description:* Represents any double quote character in Unicode. This includes the ASCII double quote (`"`) as well as typographic variants such as `“`, `”`, and others.
 
 ### 5.3. Alphanumeric Classes and Extended Variants
 
