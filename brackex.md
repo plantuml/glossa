@@ -100,13 +100,13 @@ Alternatives allow you to specify multiple possible patterns for a given positio
 
 - **Syntax:** `【 alternative1 〡 alternative2 〡 … 】`  
 - **Examples:**
-  - `a【<〡/〡\\】c`  
+  - `a【<〡/〡\】c`  
     - **Description:** Between `a` and `c`, one of the following patterns must be matched: `<`, `/`, or `\`.
-  - `a【〇{1-2}<〡〇{1-2}/〡〇{1-2}\\】c`  
+  - `a【〇{1-2}<〡〇{1-2}/〡〇{1-2}\】c`  
     - **Description:** In this case, each alternative must appear between 1 and 2 times.
 
 > **Note:**  
-> The separator `〡` is used to delimit the different alternatives within the `【` and `】` brackets.
+> The separator `〡` is used to delimit the different alternatives within the `【` and `】` brackets. Please note that `〡` is a distinct character from the standard vertical bar `|`, even though they look quite similar.
 
 ---
 
@@ -136,7 +136,7 @@ Predefined classes let you reference frequently used sets of characters using th
 ### 5.3. Alphanumeric Classes and Extended Variants
 
 - **`〴an`**  
-  *Description:* Denotes the set of alphanumeric characters (letters and digits).
+  *Description:* Denotes the set of alphanumeric characters (letters and digits) as defined by Unicode. This definition is much broader than that of `〴w` or `〴d`, which remain limited to the basic ASCII character set.
 
 - **`〴_an`**  
   *Description:* Includes alphanumeric characters plus the underscore (`_`).
