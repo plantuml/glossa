@@ -157,6 +157,24 @@ Predefined classes let you reference frequently used sets of characters using th
 
 ## 6. General Considerations
 
+### Use of Unicode U+3000 Separators
+
+A key design choice in the brackex syntax is the use of separator characters from the Unicode block [U+3000 CJK Symbols and Punctuation](https://en.wikipedia.org/wiki/CJK_Symbols_and_Punctuation). Although this may require occasional copy-pasting of these symbols, it greatly enhances the readability of expressions by eliminating the need to escape standard ASCII characters. This approach minimizes visual clutter and makes the expressions more intuitive. For reference, please see the summary of symbols used below:
+
+### Summary of Used Symbols and Delimiters
+
+| Symbol/Delimiter  | Usage                                                   |
+| ----------------- | --------------------------------------------------------|
+| `「 … 」`         | Delimits a set of characters or a range.                |
+| `〤`               | Prefix indicating negation in a set.                    |
+| `〜`               | Separates the beginning and end of a character range.   |
+| `〇`               | Introduces a quantifier (optional, *, +, {…}).           |
+| `〘 … 〙`         | Delimits a group (unnamed by default).                  |
+| `〘 name 〡 … 〙`   | Delimits a named group (where `name` is the group name). |
+| `【 … 】`         | Delimits a set of alternatives.                         |
+| `〡`               | Separates alternatives within an alternative set.       |
+| `〴`               | Introduces a predefined class.                          |
+
 - **Order of Elements:**  
   Quantifiers, introduced by `〇`, directly precede the pattern they apply to, which is contrary to the convention in traditional regex.
 
